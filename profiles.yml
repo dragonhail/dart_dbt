@@ -1,0 +1,12 @@
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: gleaming-plate-422507-e9
+      dataset: dataset_dart_samsung
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: C:\Users\YONGWOO\Desktop\google_credentials.json
+      OPTIONAL_CONFIG: VALUE
+
