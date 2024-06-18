@@ -1,4 +1,4 @@
-my-bigquery-db:
+dbt_dart_project:
   target: dev
   outputs:
     dev:
@@ -9,4 +9,3 @@ my-bigquery-db:
       threads: 4 # Must be a value of 1 or greater
       keyfile: C:\Users\YONGWOO\Desktop\google_credentials.json
       OPTIONAL_CONFIG: VALUE
-

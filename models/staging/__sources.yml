@@ -1,13 +1,53 @@
 version: 2
 
 sources:
-  - name: dataset_dart_samsung
-    schema: raw
+  - name: bq
+    database: gleaming-plate-422507-e9
+    schema: dataset_dart_samsung
     description: dataset for dart api, samsung
-    freshness:
-      warn_after:
-        count: 24
-        period: hour
     tables:
-      - name: raw_customers
-        description: One record per person who has purchased one or more items
+      - name: short_bond_bal
+        description: Short Bond Balances
+        columns:
+          - name: rcept_no
+            description: "Description of rcept_no column"
+            data_type: STRING
+          - name: corp_cls
+            description: "Description of corp_cls column"
+            data_type: STRING
+          - name: corp_code
+            description: "Description of corp_code column"
+            data_type: STRING
+          - name: corp_name
+            description: "Description of corp_name column"
+            data_type: STRING
+          - name: remndr_exprtn1
+            description: "Description of remndr_exprtn1 column"
+            data_type: STRING
+          - name: remndr_exprtn2
+            description: "Description of remndr_exprtn2 column"
+            data_type: STRING
+          - name: de10_below
+            description: "Description of de10_below column"
+            data_type: STRING
+          - name: de10_excess_de30_below
+            description: "Description of de10_excess_de30_below column"
+            data_type: STRING
+          - name: de30_excess_de90_below
+            description: "Description of de30_excess_de90_below column"
+            data_type: STRING
+          - name: de90_excess_de180_below
+            description: "Description of de90_excess_de180_below column"
+            data_type: STRING
+          - name: de180_excess_yy1_below
+            description: "Description of de180_excess_yy1_below column"
+            data_type: STRING
+          - name: sm
+            description: "Description of sm column"
+            data_type: STRING
+          - name: isu_lmt
+            description: "Description of isu_lmt column"
+            data_type: STRING
+          - name: remndr_lmt
+            description: "Description of remndr_lmt column"
+            data_type: STRINGs

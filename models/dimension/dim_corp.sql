@@ -5,5 +5,4 @@ with dim_company as (
     corp_code VARCHAR(20) UNIQUE,
     corp_name VARCHAR(100)
     FROM
-    ref{{ }}
 );
