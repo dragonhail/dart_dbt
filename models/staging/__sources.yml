@@ -3,12 +3,13 @@ version: 2
 sources:
   - name: bq
     database: gleaming-plate-422507-e9
-    schema: dataset_dart_samsung
-    description: dataset for dart api, samsung
+    schema: new
+    description: dataset for dart api
     tables:
-      - name: short_bond_bal
-        description: Short Bond Balances
+      - name: total_shares
       - name: major_shareholder
-        description: Major Shareholder
       - name: minority_share
-        description: Minor Shareholder
+      - name: out_dir_stat
+      - name: dividend_info
+      - name: emp_status
+      - name: top5_exec_comp
